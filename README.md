@@ -4,8 +4,8 @@ How to use:
 
 Step 1: Install the moviepy
 
-pip install moviepy
-pip install pillow
+- pip install moviepy
+- pip install pillow
 
 Step 2:
 check version of python should be the latest: python3.8
