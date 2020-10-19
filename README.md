@@ -8,7 +8,8 @@ Step 1: Install the moviepy
 - pip install pillow
 
 Step 2:
-check version of python should be the latest: python3.8
+check version of python should be the latest: 
+- python3.8
 
 Step 3: 
 For the Image-Audio-Video Splitter:
