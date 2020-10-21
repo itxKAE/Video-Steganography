@@ -1,3 +1,5 @@
+Credits: https://www.geeksforgeeks.org/image-based-steganography-using-python/
+
 # Video-Steganography
 How to use
 
@@ -7,8 +9,8 @@ ENCODING
   - this is a module required to perform image steganography
   
 2. running on windows
+place encoder.py and text you want to encode into folder containing frames
 >python3.8.exe Encoder.py
-
   input amount of frames -1 (frame number starts from 0)
   enter name of textfile containing content to encode
 
