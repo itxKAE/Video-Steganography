@@ -2,7 +2,8 @@ import os
 
 #Start
 print("\n1: Hide data in audio\n2: Recover data in audio\n3: Steganography Detection in Images\n4: Encoder\n5: Decoder")
-print("6: Video Splitter\n7: Video + Audio Combiner:\n8: Image Frames + Audio Combiner")
+print("6: Video Splitter and Combiner")
+#print("6: Video Splitter\n7: Video + Audio Combiner:\n8: Image Frames + Audio Combiner")
 
 try:
     start_step = int(input("\nChoose what to do:"))
@@ -35,21 +36,26 @@ try:
         os.system("python Decoder.py")
 
     elif start_step == 6:
-        vid_file = str(input("\nVideo File Name:"))
-        line_string = ("python audio-video-image-splitter.py " + vid_file)
-        os.system(line_string)
+        os.system("python aviGUI.py")
 
-    elif start_step == 7:
-        vid_file = str(input("\nVideo File Name(no audio):"))
-        aud_file = str(input("\nAudio File Name:"))
-        line_string = ("python Combining-Audio-Video.py " + vid_file + " " + aud_file)
-        os.system(line_string)
+    #elif start_step == 6:
+     #   vid_file = str(input("\nVideo File Name:"))
+     #   line_string = ("python audio-video-image-splitter.py " + vid_file)
+     #   os.system(line_string)
 
-    elif start_step == 8:
-        image_folder = str(input("\nImage Folders:"))
-        aud_file = str(input("\nAudio File Name:"))
-        line_string = ("python Image-Audio-to-Video.py " + image_folder + " " + aud_file)
-        os.system(line_string)
+    #elif start_step == 7:
+     #   vid_file = str(input("\nVideo File Name(no audio):"))
+     #   aud_file = str(input("\nAudio File Name:"))
+      #  line_string = ("python Combining-Audio-Video.py " + vid_file + " " + aud_file)
+      #  os.system(line_string)
+
+   # elif start_step == 8:
+    #    image_folder = str(input("\nImage Folders:"))
+     #   aud_file = str(input("\nAudio File Name:"))
+    #    line_string = ("python Image-Audio-to-Video.py " + image_folder + " " + aud_file)
+     #   os.system(line_string)
+
+
 
     else:
         print("\nInvalid Input! Application will exit!\n")
