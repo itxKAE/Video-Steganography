@@ -26,7 +26,7 @@ try:
         os.system(line_string)
 
     elif start_step == 3:
-        steg_det = str(input("\nSteganograhpy Image Detection"))
+        print("\nSteganograhpy Image Detection")
         os.system("python analysis.py")
 
     elif start_step == 4:

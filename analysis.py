@@ -59,12 +59,12 @@ def analyse(file):
 		print(">> No Steganography Detected!\n")
 
 # Multi-Frame Iterations Function
-def iterations(num_frames, file_type):
+def iterations(num_frames, file_type, file_location):
 	global steg_frames, detection	
 	current = 0 # Initial Frame
 	while current != num_frames:
 		print("\nAnalysing Frame %d..." % current)
-		analyse(str(current) + "." + file_type)
+		analyse(str(file_location) + "\\" + str(current) + "." + file_type)
 		if detection == 1:
 			steg_frames.append(current)
 			detection = 0
@@ -80,6 +80,7 @@ def results():
 		print(">> " + str(steg_frames)[1:-1])
 
 # Runtime
+file_location = input("Directory of Frame(s): ")
 num_frames = int(input("Number of Frame(s): "))
 file_type = input("File Type: ")
-iterations(num_frames, file_type)
+iterations(num_frames, file_type, file_location)
