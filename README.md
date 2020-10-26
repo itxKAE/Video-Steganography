@@ -13,7 +13,6 @@ on to media files such as image files, audio files, and video files.
     * [Installing Moviepy](#installing-moviepy)
 * [Steps](#Steps)
 * [Getting Started](#getting-started)
-
 * [Running Application](#running-application)
 * [Application Demo Video](#application-demo-video)
 
@@ -24,7 +23,7 @@ Install libraries/dependencies into directory path
 
 #### Installing Pillow
 
-
+     pip install pillow
 
 #### Installing Tkinter
 #### Installing OpenCv
