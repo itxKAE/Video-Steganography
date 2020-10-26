@@ -4,7 +4,7 @@ import re
 def decode(number):
     data = ''
     numbering = str(number)
-    decoder_numbering = "m" + numbering + ".png"
+    decoder_numbering = numbering + ".png"
     image = Image.open(decoder_numbering, 'r')
     imagedata = iter(image.getdata())
     while (True):

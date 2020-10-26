@@ -1,7 +1,7 @@
 # PIL to extract and modify image pixels
 from PIL import Image
 import math
- 
+import os 
 # Convert encoding data into 8-bit binary ASCII
 def generateData(data):
  
@@ -21,8 +21,7 @@ def modifyPixel(pixel, data):
     for i in range(lengthofdata):
         # Extracts 3 pixels at a time
         pixel = [value for value in imagedata.__next__()[:3] + imagedata.__next__()[:3] + imagedata.__next__()[:3]]
-        # Pixel value should be made
-        # odd for 1 and even for 0
+        # Pixel value should be made 1 or 0
         for j in range(0, 8):
             if (datalist[i][j] == '0' and pixel[j]% 2 != 0):
                 pixel[j] -= 1
@@ -31,10 +30,7 @@ def modifyPixel(pixel, data):
                     pixel[j] -= 1
                 else:
                     pixel[j] += 1
-        # Eighth pixel of every set tells
-        # whether to stop ot read further.
-        # 0 means keep reading; 1 means thec
-        # message is over.
+        #every 8th pixel determines whether to read or stop. 0 means continue 1 means stop
         if (i == lengthofdata - 1):
             if (pixel[-1] % 2 == 0):
                 if(pixel[-1] != 0):
@@ -64,7 +60,7 @@ def encoder(newimage, data):
             x += 1
  
 # Encode data into image
-def encode(number, filename):
+def encode(number, filename, path):
 #Recursively encode a textfile content into multiple frames, and content will be equally distributed among frames
     with open(filename) as fileinput: 
         filedata = fileinput.read() 
@@ -85,12 +81,14 @@ def encode(number, filename):
         image = Image.open(numbering, 'r')
         newimage = image.copy()
         encoder(newimage, encodetext)
-        new_img_name = "m" + numbering #zero_filled_number
-        newimage.save(new_img_name, str(new_img_name.split(".")[1].upper()))
+        new_img_name = numbering #zero_filled_number
+        newimage.save((path + "\\mod\\" + new_img_name), str(new_img_name.split(".")[1].upper()))
 
+path = os.getcwd()
+os.makedirs('mod')
 a_number = int(input("How many frames to encode?\n"))
 filename = input("Enter the name of your document(including extension): ")
-encode(a_number, filename)
+encode(a_number, filename, path)
 
 
 
