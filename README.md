@@ -1,7 +1,7 @@
 ## ICT2202 - Video-Steganography
 
 ## Description
-### This python script allows user to hide secret text file on to media files such as image files, audio files, and video files.
+**This python script allows user to hide secret text file on to media files such as image files, audio files, and video files.**
 
 ## Table of Contents
 * [Getting Started](#getting-started)
@@ -54,30 +54,50 @@ In order to run our program, you need to install these individual required depen
 	![Avi Gui](/images/avigui.PNG)
 
 4. Select the desired options and fill in the file paths
-4.1 If the user desired to extract video without audio, the desired output will be shown on the output folder with <filename>_video_only.mp4
-	1st Picture
-	radio button with <filename>.mp4
-4.2. If the user desired to extract audio without video, the desired output will be shown on the output folder with <filename>_audio.wav
-	2nd Picture
-	radio button with <filename>.mp4
-4.3. If the user desired to extract audio without video, the desired output will be shown on the output folder with <filename>_audio.mp3
-	3rd Picture
-	radio button with <filename>.mp4
-4.4. If the user desired to extract frames of video, the desired output will be shown on the output folder with <filename>_frames
-	4th Picture
-	radio button with <filename>.mp4
-4.5. If the user desired to combined Audio and Video, the user need to enter the Video file and audio file, then the desired output will be shown on the output folder with <filename>_combined_video_audio.mkv
-	5th Picture
-	radio button with two filenames
+
+* 4.1 If the user desired to extract video without audio, the desired output will be shown on the output folder with filename_video_only.mp4
+1st Picture
+radio button with filename.mp4
 	
+* 4.2 If the user desired to extract audio without video, the desired output will be shown on the output folder with <filename>_audio.wav
+2nd Picture
+radio button with <filename>.mp4
+	
+* 4.3 If the user desired to extract audio without video, the desired output will be shown on the output folder with <filename>_audio.mp3
+3rd Picture
+radio button with <filename>.mp4
+	
+* 4.4 If the user desired to extract frames of video, the desired output will be shown on the output folder with <filename>_frames
+4th Picture
+radio button with <filename>.mp4
+	
+* 4.5 If the user desired to combined Audio and Video, the user need to enter the Video file and audio file, then the desired output will be shown on the output folder with <filename>_combined_video_audio.mkv
+5th Picture
+radio button with two filenames
+
 5. Select 2 or 3 in order to hide or recover text file in a wave audio file.
+* 5.1 If the user press 2 and user desired was to hide text file in a wave audio file.
 
 	![Hide Audio](/images/hideaud.png)
 
+* 5.2 If the user press 3 and user desired was to recover text file in a wave audio file. Image Below
+
 6. Fill in the desired file paths and desired LSB to hide/recover the text file. The input name of the output file will be produced. 
+* 6.1 The output for the hiding the text file in a wave audio file. Image Below
+
+* 6.2 The output for the recover the text file in a wave audio file. Image below
+
 7. Select 4 or 5 in order to hide or recover text file in to the image file.
-8. Fill in the desired file paths
-9. Select 6 in order to detect steganography in images done in selection 4
+* 7.1 If the user choose number 4 and desired to hide text file in to the image. Image Below
+
+* 7.2 If the user choose number 5 and desired to recover data in the frames. Image below
+
+* 7.3 The output for 7.1 and 7.2
+
+8. Select 6 in order to detect steganography in images done in selection 4
+* 8.1 The user selects option number 6 and choose file path / file directory for selection after hide text file or before recover the data. Images Below
+* 8.2 Image below after hide text file
+* 8.3 Image below before recover the data
 
 ## Application Demo Video
 
@@ -91,7 +111,7 @@ In order to run our program, you need to install these individual required depen
 ## Project Details
 
 * [X] **Splitting Video**
-* [X] **Steganograph Frames or Audio **
+* [X] **Steganography Frames or Audio**
 * [X] **Combination of Frames and Audio into Video**
 * [X] **Play Video to Ensure it is okay**
 * [X] **Splitting Video**
