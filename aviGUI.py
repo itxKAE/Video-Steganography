@@ -76,7 +76,8 @@ def sel():
         audio_filename_widget.config(state=tk.DISABLED)
         og_filename_widget.config(state=tk.DISABLED)
 
-window_main = tk.Tk(className='Budget VLC')
+window_main = tk.Tk()
+window_main.title('AVI-Extractor')
 window_main.geometry("400x200")
 window_main.grid_columnconfigure((0,1), weight=1)
  
