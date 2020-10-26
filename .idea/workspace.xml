@@ -19,6 +19,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mirza\OneDrive\Documents\GitHub\Video-Steganography" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="RunStartHere" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Video-Steganography" />
@@ -57,5 +62,23 @@
       <updated>1603454456451</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="745" height="212" key="GridCell.Tab.0.bottom" timestamp="1603724051182">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="745" height="212" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603724051182" />
+    <state width="745" height="212" key="GridCell.Tab.0.center" timestamp="1603724051182">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="745" height="212" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603724051182" />
+    <state width="745" height="212" key="GridCell.Tab.0.left" timestamp="1603724051182">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="745" height="212" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603724051182" />
+    <state width="745" height="212" key="GridCell.Tab.0.right" timestamp="1603724051182">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="745" height="212" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603724051182" />
   </component>
 </project>
