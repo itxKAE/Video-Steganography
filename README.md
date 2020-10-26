@@ -4,14 +4,33 @@ Video-Steganography
 This python script allows user to hide secret text file
 on to media files such as image files, audio files, and video files.
 
-#Pre-Requisite
-Install libraries/dependencies into directory path
-1) Pillow
-2) Tkinter
-3) OpenCv
-4) Moviepy
+## Table of Contents <! -- TOC of Using it -->
+* [Getting Started](#getting-started)
+  * [Manual Installation](#manual-installation)
+    * [Installing Pillow](#installing-pillow)
+    * [Installing Tkinter](#installing-tkinter)
+    * [Installing OpenCV](#installing-opencv)
+    * [Installing Moviepy](#installing-moviepy)
+* [Steps](#Steps)
+* [Getting Started](#getting-started)
 
-#Steps
+* [Running Application](#running-application)
+* [Application Demo Video](#application-demo-video)
+
+## Getting Started
+
+### Manual Installation
+Install libraries/dependencies into directory path
+
+#### Installing Pillow
+
+
+
+#### Installing Tkinter
+#### Installing OpenCv
+#### Installing Moviepy
+
+## Steps
 1) Run the RunStartHere.py in order to run the program.
    It will launch the command-line based GUI for the user to select their desired option.
 
