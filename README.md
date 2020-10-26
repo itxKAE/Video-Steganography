@@ -10,6 +10,7 @@
     * [Installing Tkinter](#installing-tkinter)
     * [Installing OpenCV](#installing-opencv)
     * [Installing Moviepy](#installing-moviepy)
+    * [Installing Stegano](#installing-stegano)
 * [Running Application](#running-application)
 * [Application Demo Video](#application-demo-video)
 * [Developed With](#developed-with)
@@ -37,7 +38,11 @@ In order to run our program, you need to install these individual required depen
 
      pip install moviepy
 
+#### Installing Stegano
 
+     pip install stegano
+     
+     
 ## Running Application
 
 **How to run the application:**
