@@ -1,8 +1,7 @@
-Video-Steganography
+## ICT2202 - Video-Steganography
 
-#Description
-This python script allows user to hide secret text file
-on to media files such as image files, audio files, and video files.
+## Description
+###This python script allows user to hide secret text file on to media files such as image files, audio files, and video files.
 
 ## Table of Contents
 * [Getting Started](#getting-started)
@@ -13,9 +12,8 @@ on to media files such as image files, audio files, and video files.
     * [Installing Moviepy](#installing-moviepy)
 * [Running Application](#running-application)
 * [Application Demo Video](#application-demo-video)
-* [Developed With](#developed-with]
+* [Developed With](#developed-with)
 * [Project Details](#project-details)
-* [Milestones](#milestones)
 * [Collaborators](#collaborators)
 
 ## Getting Started
@@ -82,11 +80,16 @@ In order to run our program, you need to install these individual required depen
 * [X] **Detect Which Frames Data are Hidden**
 * [X] **Extract From Frames**
 
-## Collaborators
+## Collaborators with Contributions
 **TEAM AEGIS** 
 
-1. **Tan Kae Chuan** | [](https://github.com/)
-1. **Mirza Haziq Bin Mohammed Yusoff ** [](https://github.com/) 
+1. **Tan Kae Chuan** | [@itxKAE](https://github.com/itxKAE)
+   *
+1. **Mirza Haziq Bin Mohammed Yusoff** [@m1rzyq](https://github.com/m1rzyq) 
+   *
 1. **Muhammad Syaifulnizar Bin Izam** | [@syaifulnizarrr](https://github.com/syaifulnizarrr)
-1. **Christopher Gwee Soon Chai** | [](https://github.com/)
-1. **Ong Xing Hao** | [](https://github.com/)
+   *
+1. **Christopher Gwee Soon Chai** | [@ManOCoolture](https://github.com/ManOCoolture)
+   *
+1. **Ong Xing Hao** | [@XinhaoSITICT](https://github.com/XinhaoSITICT)
+   *
