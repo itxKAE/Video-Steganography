@@ -1,7 +1,7 @@
 # Video-Steganography
 
-# Description
+## Description
 
-# Pre-Requisite
+## Pre-Requisite
 
-# Steps
+## Steps
