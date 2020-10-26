@@ -1,6 +1,5 @@
 # Video-Steganography
-
-## Description
+Description
 
 ## Pre-Requisite
 
