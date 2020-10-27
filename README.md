@@ -23,7 +23,7 @@ This python script allows user to hide secret text file on media files such as i
     * [OpenCV](#installing-opencv)
     * [Moviepy](#installing-moviepy)
 * [General Flow](#general-flow)
-* [User Manual](#running-application)
+* [User Manual](#user-manual)
     * [Running the Application](#running-the-application)
     * [Main Menu](#main-menu)
     * [Splitting Video](#splitting-video)
@@ -66,7 +66,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Main Menu
 
-![Main Menu](/images/mainmenu.png)
+![Main Menu](/images/mainmenu.PNG)
 
 1. The initial screen upon boot up
 2. User can select the function to run by keying in the number 
@@ -75,18 +75,22 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Splitting the Video
 
-![Main Menu_1](/images/mainmenu_1.png)
+![Main Menu](/images/mainmenu.PNG)
 
 1. Key in '1' and press enter
 
+
+
 #### Getting the Video Frames
 
-![split_frames](/images/split_frames.png)
+![Main Menu_1](/images/mainmenu_1.PNG)
 
 2. Select the 4th radio button
 3. Key in the path to the video file on the first textbox (e.g. C://path/filename.mp4)
 4. Click 'Run'
 5. Extracted frames will be stored in /output/filename_frames folder (e.g. C://path/output/filename_frames/)
+
+![split_frames](/images/split_frames.png)
 
 #### Getting the Audio
 
@@ -101,11 +105,14 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Combining the Video
 
-![Main Menu_1](/images/mainmenu_1.png)
+![Main Menu](/images/mainmenu.PNG)
 
 1. Key in '1' and press enter
 
 ![combine](/images/combine.png)
+
+
+![combine1](/images/combine1.png)
 
 2. Select the 3rd radio button
 3. Key in the path to the video frames on the first textbox (e.g. C://path/output/filename_frames)
@@ -118,11 +125,12 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Hiding Data in wave Audio File
 
-![Main Menu_2](/images/mainmenu_2.png)
+![Main Menu](/images/mainmenu.PNG)
 
 1. Key in '2' and press enter
 
 ![hide_audio](/images/hide_audio.png)
+
 
 2. Key in the path of the text file to be hidden (e.g.  C://path/filename.txt)
 3. Key in the path of the audio file (e.g. C://path/output/filename_audio.wav)
@@ -132,11 +140,15 @@ The program requires the following dependencies to run. In the terminal tab:
 **Note: The entered LSB Bits and shown Bytes will be used for retrieval of data**
 6. New audio file with the hidden data will be stored at /output folder as steg_audio.wav (e.g. C://path/output/steg_audio.wav)
 
+
+![hide_audio1](/images/hide_audio1.png)
+
+
 ---
 
 ### Recovering Data in wave Audio File
 
-![Main Menu_3](/images/mainmenu_3.png)
+![Main Menu](/images/mainmenu.PNG)
 
 1. Key in '3' and press enter
 
@@ -157,7 +169,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Hiding Data within Frames
 
-![Main Menu_4](/images/mainmenu_4.png)
+![Main Menu](/images/mainmenu.PNG)
 
 1. Key in '4' and press enter
 
@@ -175,7 +187,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Recovering Data within Frames
 
-![Main Menu_5](/images/mainmenu_5.png)
+![Main Menu](/images/mainmenu.PNG)
 
 1. Key in '5' and press enter
 
@@ -192,7 +204,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Detection of Frames with Hidden Data
 
-![Main Menu_6](/images/mainmenu_6.png)
+![Main Menu](/images/mainmenu.PNG)
 
 1. Key in '6' and press enter
 
