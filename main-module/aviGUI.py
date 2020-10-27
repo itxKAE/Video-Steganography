@@ -1,4 +1,5 @@
 # Contribution: Syaiful
+#Xin Hao 28 Oct 20 - Bugfix - fixed combining of frames
 
 import tkinter as tk
 import sys
@@ -19,7 +20,6 @@ def wrapper():
         video_object = VideoFileClip(vf)
         get_audio(base_filename, video_object)
     elif option == 3:
-        video_object = VideoFileClip(vf)
         video_file = video_filename.get()
         audio_file = audio_filename.get()
         og_file = og_filename.get()
