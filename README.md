@@ -89,17 +89,21 @@ The program requires the following dependencies to run. In the terminal tab:
 4. Click 'Run'
 5. Extracted frames will be stored in /output/filename_frames folder (e.g. C://path/output/filename_frames/)
 
+**Disclaimer: The files that was created from the tool is shown for example purposes.**
 ![split_frames](/images/split_frames.png)
 
 #### Getting the Audio
 
-![split_audio](/images/split_audio.png)
+
 
 2. Select the 2nd radio button
 3. Key in the path to the video file on the first textbox (e.g. C://path/filename.mp4)
 4. Click 'Run'
 5. Extracted audio will be stored in /output folder as filename_audio.wav (e.g. C://path/output/filename_audio.wav)
- 
+
+**Disclaimer: The files that was created from the tool is shown for example purposes.**
+![split_audio](/images/split_audio.png)
+
 ---
 
 ### Combining the Video
