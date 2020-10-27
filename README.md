@@ -66,7 +66,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Main Menu
 
-![Main Menu](/images/main_menu.png)
+![Main Menu](/images/main.png)
 
 1. The initial screen upon boot up
 2. User can select the function to run by keying in the number 
@@ -75,15 +75,14 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Splitting the Video
 
-![Main Menu](/images/main_menu.png)
+![Main Menu](/images/mainmenu_1.png)
 
 1. Key in '1' and press enter
 
 
-
 #### Getting the Video Frames
 
-![Main Menu_1](/images/main_menu_1.png)
+![Main Menu_1](/images/menu.PNG)
 
 2. Select the 4th radio button
 3. Key in the path to the video file on the first textbox (e.g. C://path/filename.mp4)
@@ -105,7 +104,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Combining the Video
 
-![Main Menu](/images/main_menu.png)
+![Main Menu](/images/mainmenu_1.png)
 
 1. Key in '1' and press enter
 
@@ -125,7 +124,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Hiding Data in wave Audio File
 
-![Main Menu](/images/main_menu.png)
+![Main Menu](/images/mainmenu_2.png)
 
 1. Key in '2' and press enter
 
@@ -148,7 +147,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Recovering Data in wave Audio File
 
-![Main Menu](/images/main_menu.png)
+![Main Menu](/images/mainmenu_3.png)
 
 1. Key in '3' and press enter
 
@@ -169,7 +168,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Hiding Data within Frames
 
-![Main Menu](/images/main_menu.png)
+![Main Menu](/images/mainmenu_4.png)
 
 1. Key in '4' and press enter
 
@@ -183,15 +182,18 @@ The program requires the following dependencies to run. In the terminal tab:
 5. Key in the path to the text file to hide (e.g. C://path/filename.txt)
 6. System informs that the data has been hidden
 
+
+![hide_text](/images/hide_text.png)
+
 ---
 
 ### Recovering Data within Frames
 
-![Main Menu](/images/main_menu.png)
+![Main Menu](/images/mainmenu_5.png)
 
 1. Key in '5' and press enter
 
-![recover_frame](/images/recover_frame.png)
+![recover_frame](/images/recover_frame_1.png)
 
 2. Key in the initial frame to where data is hidden (e.g. 3)
 3. Key in the last frame to where data data (e.g. 6)
@@ -200,11 +202,13 @@ The program requires the following dependencies to run. In the terminal tab:
 4. Key in the path to the frames folder (e.g. C://path/output/filename_frames)
 6. Retrieved data will be stored in /output folder as decoded_frames.txt (e.g. C://path/output/decoded_frames.txt)
 
+![recover_text](/images/recover_text.png)
+
 ---
 
 ### Detection of Frames with Hidden Data
 
-![Main Menu](/images/main_menu.png)
+![Main Menu](/images/mainmenu_6.png)
 
 1. Key in '6' and press enter
 
