@@ -2,6 +2,10 @@
 
 import os
 
+# Checks if output Directory Exists, otherwise Create It
+if not os.path.exists('output'):
+    os.makedirs('output')
+
 # Menu
 print("\n1: Video Splitter and Combiner")
 print("2: Hide Data in Audio")
