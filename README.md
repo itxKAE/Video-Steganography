@@ -173,7 +173,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 1. Key in '4' and press enter
 
-![hide_frame](/images/hide_frame.png)
+![hide_frame](/images/frame_in_output.png)
 
 2. Key in the initial frame to hide the data (e.g. 3)
 3. Key in the last frame to hide the data (e.g. 6)
@@ -191,7 +191,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 1. Key in '5' and press enter
 
-![recover_frame](/images/recover_frame.png)
+![recover_frame](/images/frame_out_output.png)
 
 2. Key in the initial frame to where data is hidden (e.g. 3)
 3. Key in the last frame to where data data (e.g. 6)
