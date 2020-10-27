@@ -33,6 +33,7 @@ This python script allows user to hide secret text file on media files such as i
     * [Hiding Data within Frames](#hiding-data-within-frames)
     * [Recovering Data within Frames](#recovering-data-within-frames)
     * [Detection of Frames with Hidden Data](#detection-of-frames-with-hidden-data)
+    * [Output Folder] (#output-folder)
 * [Application Demo](#application-demo)
 * [Softwares Used](#softwares-used)
 * [Collaborators](#collaborators)
@@ -89,12 +90,6 @@ The program requires the following dependencies to run. In the terminal tab:
 4. Click 'Run'
 5. Extracted frames will be stored in /output/filename_frames folder (e.g. C://path/output/filename_frames/)
 
-**Disclaimer: The files that was created from the tool is shown for example purposes.**
-
-**Example Purposes: filename = Test**
-
-![split_frames](/images/split_frames.png)
-
 ----
 
 #### Getting the Audio
@@ -105,12 +100,6 @@ The program requires the following dependencies to run. In the terminal tab:
 3. Key in the path to the video file on the first textbox (e.g. C://path/filename.mp4)
 4. Click 'Run'
 5. Extracted audio will be stored in /output folder as filename_audio.wav (e.g. C://path/output/filename_audio.wav)
-
-**Disclaimer: The files that was created from the tool is shown for example purposes.**
-
-**Example Purposes: filename = Test**
-
-![split_audio](/images/split_audio.png)
 
 ---
 
@@ -129,14 +118,6 @@ The program requires the following dependencies to run. In the terminal tab:
 6. Click 'Run'
 7. Combined video will be stored in /output folder as combined_video_audio.mkv (e.g. C://path/output/combined_video_audio.mkv)
 
-**Disclaimer: The files that was created from the tool is shown for example purposes.**
-
-**Example Purposes: filename = World Record**
-
-![combine_1](/images/combine_1.png)
-
-![combine_2](/images/combine_2.png)
-
 ---
 
 ### Hiding Data in wave Audio File
@@ -145,20 +126,19 @@ The program requires the following dependencies to run. In the terminal tab:
 
 1. Key in '2' and press enter
 
-![hide_audio](/images/hide_audio.png)
-
+![hide_audio1](/images/hide_audio1.png)
 
 2. Key in the path of the text file to be hidden (e.g.  C://path/filename.txt)
 3. Key in the path of the audio file (e.g. C://path/output/filename_audio.wav)
 4. Key in the LSB Bits to hide data at (e.g. 3)
+
 **Note: Value should be between 1 to 8**
+
 5. System will inform of how many bytes are used to store the data
+
 **Note: The entered LSB Bits and shown Bytes will be used for retrieval of data**
+
 6. New audio file with the hidden data will be stored at /output folder as steg_audio.wav (e.g. C://path/output/steg_audio.wav)
-
-
-![hide_audio1](/images/hide_audio1.png)
-
 
 ---
 
@@ -172,13 +152,21 @@ The program requires the following dependencies to run. In the terminal tab:
 
 2. Key in the path of the audio file to recover from (e.g. C://path/output/steg_audio.wav)
 3. Key in the LSB Bits (e.g. 3)
+
 **Note 1: Value should be between 1 to 8**
+
 **Note 2: Value should be the same as the one entered during hiding**
+
 4. Key in the number of bytes used to store the data (e.g. 380)
+
 **Note: Value can be obtained from the system output during hiding**
+
 5. Retrieved data will be stored at /output folder as decoded_audio.txt (e.g. C://path/output/decoded_audio.txt)
+
 **Note 1: Incorrect LSB Bits entered leads to random data retrieved**
+
 **Note 2: Lower bytes value entered leads to partial data retrieved**
+
 **Note 3: Higher bytes value entered leads to full data retrieved with random data**
 
 ---
@@ -193,14 +181,14 @@ The program requires the following dependencies to run. In the terminal tab:
 
 2. Key in the initial frame to hide the data (e.g. 3)
 3. Key in the last frame to hide the data (e.g. 6)
+
 **Note 1: User can store the data within any range of the frame as long as the size of the frame can hold the data**
+
 **Note 2: If the data stored is significantly small and a wide range of frames have been selected, this may lead to random data to be retrieved during recovery process**
+
 4. Key in the path to the frames folder (e.g. C://path/output/filename_frames)
 5. Key in the path to the text file to hide (e.g. C://path/filename.txt)
 6. System informs that the data has been hidden
-
-
-![hide_text](/images/hide_text.png)
 
 ---
 
@@ -214,12 +202,13 @@ The program requires the following dependencies to run. In the terminal tab:
 
 2. Key in the initial frame to where data is hidden (e.g. 3)
 3. Key in the last frame to where data data (e.g. 6)
+
 **Note 1: The initial and last frame refers to a range of frames (e.g. initial = 3 | last = 8 | range = frame 3 to frame 8)**
+
 **Note 2: If the data stored is significantly small and a wide range of frames have been selected, this may lead to random data to be retrieved during recovery process**
+
 4. Key in the path to the frames folder (e.g. C://path/output/filename_frames)
 5. Retrieved data will be stored in /output folder as decoded_frames.txt (e.g. C://path/output/decoded_frames.txt)
-
-![recover_text](/images/recover_text.png)
 
 ---
 
@@ -238,7 +227,15 @@ The program requires the following dependencies to run. In the terminal tab:
 ![detection_2](/images/detection_2.png)
 
 5. System outputs the frames where Steganography has been detected
+
 **Note: False-positive may occur if small amount of hidden data exists within the frame**
+
+---
+
+### Output Folder
+This folder will be created upon launching the tool. The image above shows where the output folder will be located.
+
+Within the folder, these are all the files that have been created using this tool. The filename used for this example is 'Test'.
 
 ---
 
