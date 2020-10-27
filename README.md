@@ -97,7 +97,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 #### Getting the Audio
 
-![audio_menu(/images/audio_menu.png)
+![audio_menu](/images/audio_menu.png)
 
 2. Select the 2nd radio button
 3. Key in the path to the video file on the first textbox (e.g. C://path/filename.mp4)
