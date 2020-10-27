@@ -50,7 +50,7 @@ The program requires the following dependencies to run. In the terminal tab:
      pip install opencv-python
 ### Installing Moviepy
      pip install moviepy
-### Installing matplotlib
+### Installing Matplotlib
      pip install matplotlib
 
 ---
