@@ -68,8 +68,10 @@ def encode(start, end, filename, frame_loc):
     datapoints = math.ceil(len(filedata) / total_frame) # Data Distribution per Frame
     counter = -1
     for convnum in range(start, end+1):
+        # print(str(counter)  + "\n")
         numbering = frame_loc + "\\" + str(convnum) + ".png"
-        encodetext = filedata[counter+1:(datapoints*(convnum+1))]
+        encodetext = filedata[counter+1:(datapoints*(convnum))]
+        # print(encodetext + "\n")
         counter += datapoints 
         image = Image.open(numbering, 'r') # Parameter has to be r, otherwise ValueError will occur (https://pillow.readthedocs.io/en/stable/reference/Image.html)
         newimage = image.copy() # New Variable to Store Hiddend Data
@@ -86,9 +88,3 @@ frame_location = input("Frames Location: ")
 filename = input("File (inc. extension): ")
 print("Performing Steganography...")
 encode(frame_start, frame_end, filename, frame_location)
-
-
-
-
-
- 
