@@ -1,3 +1,5 @@
+# Contribution: Kae Chuan
+
 import matplotlib.pyplot as plt
 import numpy
 
