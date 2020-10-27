@@ -90,11 +90,14 @@ The program requires the following dependencies to run. In the terminal tab:
 5. Extracted frames will be stored in /output/filename_frames folder (e.g. C://path/output/filename_frames/)
 
 **Disclaimer: The files that was created from the tool is shown for example purposes.**
+
+**Example Purposes: filename = Test**
+
 ![split_frames](/images/split_frames.png)
 
 #### Getting the Audio
 
-
+![audio_menu](/images/audio_menu.png)
 
 2. Select the 2nd radio button
 3. Key in the path to the video file on the first textbox (e.g. C://path/filename.mp4)
@@ -102,6 +105,9 @@ The program requires the following dependencies to run. In the terminal tab:
 5. Extracted audio will be stored in /output folder as filename_audio.wav (e.g. C://path/output/filename_audio.wav)
 
 **Disclaimer: The files that was created from the tool is shown for example purposes.**
+
+**Example Purposes: filename = Test**
+
 ![split_audio](/images/split_audio.png)
 
 ---
@@ -114,16 +120,21 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ![combine](/images/combine.png)
 
-
-![combine1](/images/combine1.png)
-
 2. Select the 3rd radio button
 3. Key in the path to the video frames on the first textbox (e.g. C://path/output/filename_frames)
 4. Key in the path to the audio file on the second textbox (e.g. C://path/output/filename_audio.wav)
 5. Key in the path to the original video file on the first textbox (e.g. C://path/filename.mp4)
 6. Click 'Run'
 7. Combined video will be stored in /output folder as combined_video_audio.mkv (e.g. C://path/output/combined_video_audio.mkv)
- 
+
+**Disclaimer: The files that was created from the tool is shown for example purposes.**
+
+**Example Purposes: filename = World Record**
+
+![combine1](/images/combine1.png)
+
+![combine2](/images/combine2.png)
+
 ---
 
 ### Hiding Data in wave Audio File
