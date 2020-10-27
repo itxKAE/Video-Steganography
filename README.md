@@ -236,9 +236,14 @@ The program requires the following dependencies to run. In the terminal tab:
 ---
 
 ### Output Folder
+
+![output_circle](/images/output_circle.png)
+
 This folder will be created upon launching the tool. The image above shows where the output folder will be located.
 
-Within the folder, these are all the files that have been created using this tool. The filename used for this example is 'Test'.
+![output_folder](/images/output_folder.png)
+
+Within the folder, these are all the files that have been created using this tool. The filename used for this example is 'test'.
 
 ---
 
