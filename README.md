@@ -75,7 +75,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Splitting the Video
 
-![Main Menu](/images/mainmenu1.png)
+![Main Menu](/images/mainmenu_1.png)
 
 1. Key in '1' and press enter
 
