@@ -1,138 +1,226 @@
-# Video-Steganography
+# Video Steganography Tool
+This python script allows user to hide secret text file on media files such as image, audio, and video. It also allows Steganalysis of frames to identify Steganography-ed frames.
 
-## Description
-**This python script allows user to hide secret text file on media files such as image, audio, and video. It also allows Steganalysis of frames to identify Steganography-ed frames.**
+---
+
+## Features
+* Spliting Video into Audio and Frames
+* Combining Audio and Frames into Video
+* Hiding and Retrieving Data from Frames (Image Steganography)
+* Hiding and Retrieving Data from Audio (Audio Steganography)
+* Steganalysis of Frames
+
+---
+
+**Note: Tool has not been programed to accept wrong/invalid inputs**
+
+---
 
 ## Table of Contents
-* [Getting Started](#getting-started)
-  * [Manual Installation Required Dependencies](#manual-installation-required-dependencies)
-    * [Installing Pillow](#installing-pillow)
-    * [Installing Tkinter](#installing-tkinter)
-    * [Installing OpenCV](#installing-opencv)
-    * [Installing Moviepy](#installing-moviepy)
-* [Running Application](#running-application)
-    * [How to run the application](#how-to-run-the-application)
-    * [GUI](#gui)
-    * [Extraction and Combining](#extraction-and-combining)
-    * [Hiding and Recover data in or from wave audio file](#hiding-and-recover-data-in-or-from-wave-audio-file)
-    * [Hide or Recover Text file data in/from image file](#hide-or-recover-text-file-data-in-or-from-image-file)
-    * [Detection](#detection)
-* [Application Demo Video](#application-demo-video)
-* [Developed With](#developed-with)
-* [Project Details](#project-details)
+* [Required Dependencies](#required-dependencies)
+    * [Pillow](#installing-pillow)
+    * [Tkinter](#installing-tkinter)
+    * [OpenCV](#installing-opencv)
+    * [Moviepy](#installing-moviepy)
+* [General Flow](#general-flow)
+* [User Manual](#running-application)
+    * [Running the Application](#running-the-application)
+    * [Main Menu](#main-menu)
+    * [Splitting Video](#splitting-video)
+    * [Combining Video](#combining-video)
+    * [Hiding Data in wave Audio File](#hiding-data-in-wave-audio-file)
+    * [Recovering Data in wave Audio File](#recovering-data-in-wave-audio-file)
+    * [Hiding Data within Frames](#hiding-data-within-frames)
+    * [Recovering Data within Frames](#recovering-data-within-frames)
+    * [Detection of Frames with Hidden Data](#detection-of-frames-with-hidden-data)
+* [Application Demo](#application-demo)
+* [Softwares Used](#softwares-used)
 * [Collaborators](#collaborators)
 
-## Getting Started
+---
 
-### Manual Installation
-In order to run our program, you need to install these individual required dependencies in your directory path. In your terminal tab: 
-
-#### Installing Pillow
-
+## Required Dependencies
+The program requires the following dependencies to run. In the terminal tab: 
+### Installing Pillow
      pip install pillow
-
-#### Installing Tkinter
-
+### Installing Tkinter
      pip install tkinter
-     
-#### Installing OpenCV
-
+### Installing OpenCV
      pip install opencv-python
-     
-#### Installing Moviepy
-
+### Installing Moviepy
      pip install moviepy
 
-     
-## Running Application
+---
 
-#### How to run the application
+## General Flow
+![flow](/images/flow.png)
 
-     Run the python file "RunStartHere.py"
+---
 
-#### GUI
-1. It will launch the command-line based GUI for the user to select their desired option.
+## User Manual
 
-	![Main Gui](/images/maingui.PNG)
+### Running the Application
+     python file RunStartHere.py
 
-2. If user wants to prepare the video file for steganography, select option 1: Video Splitter and Combiner.
-3. User would then be presented with a Tkinter GUI in order to insert their file paths, select options and such.
+---
 
-	![Avi Gui](/images/avigui.PNG)
+### Main Menu
 
-#### Extraction and Combining
+![Main Menu](/images/mainmenu.png)
 
-4. Select the desired options and fill in the file paths
+1. The initial screen upon boot up
+2. User can select the function to run by keying in the number 
 
-* 4.1 If the user desired to extract video without audio, the desired output will be shown on the output folder with filename_video_only.mp4
-1st Picture
-radio button with filename.mp4
-	
-* 4.2 If the user desired to extract audio without video, the desired output will be shown on the output folder with <filename>_audio.wav
-2nd Picture
-radio button with <filename>.mp4
-	
-* 4.3 If the user desired to extract audio without video, the desired output will be shown on the output folder with <filename>_audio.mp3
-3rd Picture
-radio button with <filename>.mp4
-	
-* 4.4 If the user desired to extract frames of video, the desired output will be shown on the output folder with <filename>_frames
-4th Picture
-radio button with <filename>.mp4
-	
-* 4.5 If the user desired to combined Audio and Video, the user need to enter the Video file and audio file, then the desired output will be shown on the output folder with <filename>_combined_video_audio.mkv
-5th Picture
-radio button with two filenames
+---
 
-#### Hiding and Recover data in or from wave audio file
+### Splitting the Video
 
-5. Select 2 or 3 in order to hide or recover text file in a wave audio file.
-* 5.1 If the user press 2 and user desired was to hide text file in a wave audio file.
+![Main Menu_1](/images/mainmenu_1.png)
 
-	![Hide Audio](/images/hideaud.png)
+1. Key in '1' and press enter
 
-* 5.2 If the user press 3 and user desired was to recover text file in a wave audio file. Image Below
+#### Getting the Video Frames
 
-6. Fill in the desired file paths and desired LSB to hide/recover the text file. The input name of the output file will be produced. 
-* 6.1 The output for the hiding the text file in a wave audio file. Image Below
+![split_frames](/images/split_frames.png)
 
-* 6.2 The output for the recover the text file in a wave audio file. Image below
+2. Select the 4th radio button
+3. Key in the path to the video file on the first textbox (e.g. C://path/filename.mp4)
+4. Click 'Run'
+5. Extracted frames will be stored in /output/filename_frames folder (e.g. C://path/output/filename_frames/)
 
-#### Hide or Recover Text file data in or from image file
+#### Getting the Audio
 
-7. Select 4 or 5 in order to hide or recover text file in to the image file.
-* 7.1 If the user choose number 4 and desired to hide text file in to the image. Image Below
+![split_audio](/images/split_audio.png)
 
-* 7.2 If the user choose number 5 and desired to recover data in the frames. Image below
+2. Select the 1st radio button
+3. Key in the path to the video file on the first textbox (e.g. C://path/filename.mp4)
+4. Click 'Run'
+5. Extracted audio will be stored in /output folder as filename_audio.wav (e.g. C://path/output/filename_audio.wav)
+ 
+---
 
-* 7.3 The output for 7.1 and 7.2
+### Combining the Video
 
-#### Detection
+![Main Menu_1](/images/mainmenu_1.png)
 
-8. Select 6 in order to detect steganography in images done in selection 4
-* 8.1 The user selects option number 6 and choose file path / file directory for selection after hide text file or before recover the data. Images Below
-* 8.2 Image below after hide text file
-* 8.3 Image below before recover the data
+1. Key in '1' and press enter
 
-## Application Demo Video
+![combine](/images/combine.png)
 
-[![Watch the video](<!--Link from github, screenpic--> "Click here to watch the video")](<!-- Youtube Link)
+2. Select the 3rd radio button
+3. Key in the path to the video frames on the first textbox (e.g. C://path/output/filename_frames)
+4. Key in the path to the audio file on the second textbox (e.g. C://path/output/filename_audio.wav)
+5. Key in the path to the original video file on the first textbox (e.g. C://path/filename.mp4)
+6. Click 'Run'
+7. Combined video will be stored in /output folder as combined_video_audio.mkv (e.g. C://path/output/combined_video_audio.mkv)
+ 
+---
 
-## Developed With
+### Hiding Data in wave Audio File
+
+![Main Menu_2](/images/mainmenu_2.png)
+
+1. Key in '2' and press enter
+
+![hide_audio](/images/hide_audio.png)
+
+2. Key in the path of the text file to be hidden (e.g.  C://path/filename.txt)
+3. Key in the path of the audio file (e.g. C://path/output/filename_audio.wav)
+4. Key in the LSB Bits to hide data at (e.g. 3)
+**Note: Value should be between 1 to 8**
+5. System will inform of how many bytes are used to store the data
+**Note: The entered LSB Bits and shown Bytes will be used for retrieval of data**
+6. New audio file with the hidden data will be stored at /output folder as steg_audio.wav (e.g. C://path/output/steg_audio.wav)
+
+---
+
+### Recovering Data in wave Audio File
+
+![Main Menu_3](/images/mainmenu_3.png)
+
+1. Key in '3' and press enter
+
+![recover_audio](/images/recover_audio.png)
+
+2. Key in the path of the audio file to recover from (e.g. C://path/output/steg_audio.wav)
+3. Key in the LSB Bits (e.g. 3)
+**Note 1: Value should be between 1 to 8**
+**Note 2: Value should be the same as the one entered during hiding**
+4. Key in the number of bytes used to store the data (e.g. 380)
+**Note: Value can be obtained from the system output during hiding**
+5. Retrieved data will be stored at /output folder as decoded_audio.txt (e.g. C://path/output/decoded_audio.txt)
+**Note 1: Incorrect LSB Bits entered leads to random data retrieved**
+**Note 2: Lower bytes value entered leads to partial data retrieved**
+**Note 3: Higher bytes value entered leads to full data retrieved with random data**
+
+---
+
+### Hiding Data within Frames
+
+![Main Menu_4](/images/mainmenu_4.png)
+
+1. Key in '4' and press enter
+
+![hide_frame](/images/hide_frame.png)
+
+2. Key in the initial frame to hide the data (e.g. 3)
+3. Key in the last frame to hide the data (e.g. 6)
+**Note 1: User can store the data within any range of the frame as long as the size of the frame can hold the data**
+**Note 2: If the data stored is significantly small and a wide range of frames have been selected, this may lead to random data to be retrieved during recovery process**
+4. Key in the path to the frames folder (e.g. C://path/output/filename_frames)
+5. Key in the path to the text file to hide (e.g. C://path/filename.txt)
+6. System informs that the data has been hidden
+
+---
+
+### Recovering Data within Frames
+
+![Main Menu_5](/images/mainmenu_5.png)
+
+1. Key in '5' and press enter
+
+![recover_frame](/images/recover_frame.png)
+
+2. Key in the initial frame to where data is hidden (e.g. 3)
+3. Key in the last frame to where data data (e.g. 6)
+**Note 1: The initial and last frame refers to a range of frames (e.g. initial = 3 | last = 8 | range = frame 3 to frame 8)**
+**Note 2: If the data stored is significantly small and a wide range of frames have been selected, this may lead to random data to be retrieved during recovery process**
+4. Key in the path to the frames folder (e.g. C://path/output/filename_frames)
+6. Retrieved data will be stored in /output folder as decoded_frames.txt (e.g. C://path/output/decoded_frames.txt)
+
+---
+
+### Detection of Frames with Hidden Data
+
+![Main Menu_6](/images/mainmenu_6.png)
+
+1. Key in '6' and press enter
+
+![detection_1](/images/detection_1.png)
+
+2. Key in the path to the frames folder (e.g. C://path/output/filename_frames)
+4. Key in the number of frames to perform Steganalysis on (e.g. 30)
+5. Key in the file extension (e.g. png)
+
+![detection_1](/images/detection_1.png)
+
+6. System outputs the frames where Steganography has been detected
+**Note: False-positive may occur if small amount of hidden data exists within the frame**
+
+---
+
+## Application Demo
+
+[![Watch the video](screenshot)](link)
+
+---
+
+## Softwares Used
 
 * [Python 3.7](https://docs.python.org/3.7/)
 * [FFmpeg](https://ffmpeg.org/download.html#build-windows)
 
-## Project Details
-
-* [X] **Splitting Video**
-* [X] **Steganography Frames or Audio**
-* [X] **Combination of Frames and Audio into Video**
-* [X] **Play Video to Ensure it is okay**
-* [X] **Splitting Video**
-* [X] **Extract from Audio**
-* [X] **Detect Which Frames Data are Hidden**
-* [X] **Extract From Frames**
+---
 
 ## Collaborators
 **TEAM AEGIS** 
