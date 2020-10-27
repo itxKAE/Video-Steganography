@@ -66,7 +66,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Main Menu
 
-![main_menu](/images/main_menu.png)
+![Main_Menu](/images/main_menu.png)
 
 1. The initial screen upon boot up
 2. User can select the function to run by keying in the number 
@@ -83,7 +83,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 #### Getting the Video Frames
 
-![Main Menu_1](/images/mainmenu_1.png)
+![Main_Menu_1](/images/main_menu_1.png)
 
 2. Select the 4th radio button
 3. Key in the path to the video file on the first textbox (e.g. C://path/filename.mp4)
@@ -96,7 +96,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ![split_audio](/images/split_audio.png)
 
-2. Select the 1st radio button
+2. Select the 2nd radio button
 3. Key in the path to the video file on the first textbox (e.g. C://path/filename.mp4)
 4. Click 'Run'
 5. Extracted audio will be stored in /output folder as filename_audio.wav (e.g. C://path/output/filename_audio.wav)
