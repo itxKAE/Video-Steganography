@@ -22,6 +22,7 @@ This python script allows user to hide secret text file on media files such as i
     * [Tkinter](#installing-tkinter)
     * [OpenCV](#installing-opencv)
     * [Moviepy](#installing-moviepy)
+    * [Matplotlib](#installing-matplotlib)
 * [General Flow](#general-flow)
 * [User Manual](#user-manual)
     * [Running the Application](#running-the-application)
@@ -50,6 +51,8 @@ The program requires the following dependencies to run. In the terminal tab:
      pip install opencv-python
 ### Installing Moviepy
      pip install moviepy
+### Installing Matplotib
+     pip install matplotlib
 
 ---
 
