@@ -33,7 +33,7 @@ This python script allows user to hide secret text file on media files such as i
     * [Hiding Data within Frames](#hiding-data-within-frames)
     * [Recovering Data within Frames](#recovering-data-within-frames)
     * [Detection of Frames with Hidden Data](#detection-of-frames-with-hidden-data)
-    * [Output Folder] (#output-folder)
+    * [Output Folder](#output-folder)
 * [Application Demo](#application-demo)
 * [Softwares Used](#softwares-used)
 * [Collaborators](#collaborators)
