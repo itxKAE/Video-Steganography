@@ -54,7 +54,7 @@ The program requires the following dependencies to run. In the terminal tab:
 ---
 
 ## General Flow
-![flow](/images/flow.png)
+![flowchart](/images/flowchart.png)
 
 ---
 
