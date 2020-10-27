@@ -1,7 +1,7 @@
-## ICT2202 - Video-Steganography
+# Video-Steganography
 
 ## Description
-**This python script allows user to hide secret text file on to media files such as image files, audio files, and video files.**
+**This python script allows user to hide secret text file on media files such as image, audio, and video. It also allows Steganalysis of frames to identify Steganography-ed frames.**
 
 ## Table of Contents
 * [Getting Started](#getting-started)
