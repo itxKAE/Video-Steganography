@@ -66,7 +66,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Main Menu
 
-![Main Menu](/images/main_menu.png)
+![Main Menu](/images/main.png)
 
 1. The initial screen upon boot up
 2. User can select the function to run by keying in the number 
@@ -75,7 +75,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Splitting the Video
 
-![Main Menu](/images/main_menu.png)
+![Main Menu](/images/mainmenu1.png)
 
 1. Key in '1' and press enter
 
@@ -83,7 +83,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 #### Getting the Video Frames
 
-![Main Menu_1](/images/main_menu_1.png)
+![Main Menu_1](/images/menu.PNG)
 
 2. Select the 4th radio button
 3. Key in the path to the video file on the first textbox (e.g. C://path/filename.mp4)
@@ -105,7 +105,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Combining the Video
 
-![Main Menu](/images/main_menu.PNG)
+![Main Menu](/images/mainmenu_1.png)
 
 1. Key in '1' and press enter
 
@@ -125,7 +125,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Hiding Data in wave Audio File
 
-![Main Menu](/images/main_menu.png)
+![Main Menu](/images/mainmenu_2.png)
 
 1. Key in '2' and press enter
 
@@ -148,7 +148,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Recovering Data in wave Audio File
 
-![Main Menu](/images/mainmenu.PNG)
+![Main Menu](/images/mainmenu_3.PNG)
 
 1. Key in '3' and press enter
 
@@ -169,7 +169,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Hiding Data within Frames
 
-![Main Menu](/images/mainmenu.PNG)
+![Main Menu](/images/mainmenu_4.PNG)
 
 1. Key in '4' and press enter
 
@@ -187,7 +187,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Recovering Data within Frames
 
-![Main Menu](/images/mainmenu.PNG)
+![Main Menu](/images/mainmenu_5.PNG)
 
 1. Key in '5' and press enter
 
@@ -204,21 +204,15 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Detection of Frames with Hidden Data
 
-![Main Menu](/images/mainmenu.PNG)
+![Main Menu](/images/mainmenu_6.PNG)
 
 1. Key in '6' and press enter
-
-![detection_1](/images/detection_1.png)
-
 2. Key in the path to the frames folder (e.g. C://path/output/filename_frames)
 4. Key in the number of frames to perform Steganalysis on (e.g. 30)
 5. Key in the file extension (e.g. png)
-
-![detection_1](/images/detection_1.png)
-
 6. System outputs the frames where Steganography has been detected
 **Note: False-positive may occur if small amount of hidden data exists within the frame**
-
+![detection_1](/images/analysis.png)
 ---
 
 ## Application Demo
