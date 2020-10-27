@@ -26,8 +26,8 @@ This python script allows user to hide secret text file on media files such as i
 * [User Manual](#user-manual)
     * [Running the Application](#running-the-application)
     * [Main Menu](#main-menu)
-    * [Splitting Video](#splitting-video)
-    * [Combining Video](#combining-video)
+    * [Splitting the Video](#splitting-the-video)
+    * [Combining the Video](#combining-the-video)
     * [Hiding Data in wave Audio File](#hiding-data-in-wave-audio-file)
     * [Recovering Data in wave Audio File](#recovering-data-in-wave-audio-file)
     * [Hiding Data within Frames](#hiding-data-within-frames)
@@ -66,7 +66,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Main Menu
 
-![Main Menu](/images/mainmenu.PNG)
+![main_menu](/images/main_menu.png)
 
 1. The initial screen upon boot up
 2. User can select the function to run by keying in the number 
@@ -75,7 +75,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Splitting the Video
 
-![Main Menu](/images/mainmenu.PNG)
+![Main_Menu](/images/main_menu.png)
 
 1. Key in '1' and press enter
 
@@ -83,7 +83,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 #### Getting the Video Frames
 
-![Main Menu_1](/images/mainmenu_1.PNG)
+![Main Menu_1](/images/mainmenu_1.png)
 
 2. Select the 4th radio button
 3. Key in the path to the video file on the first textbox (e.g. C://path/filename.mp4)
