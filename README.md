@@ -147,7 +147,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Recovering Data in wave Audio File
 
-![Main Menu](/images/mainmenu_3.png)
+![Main Menu](/images/mainmenu_3.PNG)
 
 1. Key in '3' and press enter
 
@@ -168,7 +168,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Hiding Data within Frames
 
-![Main Menu](/images/mainmenu_4.png)
+![Main Menu](/images/mainmenu_4.PNG)
 
 1. Key in '4' and press enter
 
@@ -189,7 +189,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Recovering Data within Frames
 
-![Main Menu](/images/mainmenu_5.png)
+![Main Menu](/images/mainmenu_5.PNG)
 
 1. Key in '5' and press enter
 
@@ -200,7 +200,7 @@ The program requires the following dependencies to run. In the terminal tab:
 **Note 1: The initial and last frame refers to a range of frames (e.g. initial = 3 | last = 8 | range = frame 3 to frame 8)**
 **Note 2: If the data stored is significantly small and a wide range of frames have been selected, this may lead to random data to be retrieved during recovery process**
 4. Key in the path to the frames folder (e.g. C://path/output/filename_frames)
-6. Retrieved data will be stored in /output folder as decoded_frames.txt (e.g. C://path/output/decoded_frames.txt)
+5. Retrieved data will be stored in /output folder as decoded_frames.txt (e.g. C://path/output/decoded_frames.txt)
 
 ![recover_text](/images/recover_text.png)
 
@@ -208,19 +208,19 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ### Detection of Frames with Hidden Data
 
-![Main Menu](/images/mainmenu_6.png)
+![Main Menu](/images/mainmenu_6.PNG)
 
 1. Key in '6' and press enter
 
 ![detection_1](/images/detection_1.png)
 
 2. Key in the path to the frames folder (e.g. C://path/output/filename_frames)
-4. Key in the number of frames to perform Steganalysis on (e.g. 30)
-5. Key in the file extension (e.g. png)
+3. Key in the number of frames to perform Steganalysis on (e.g. 30)
+4. Key in the file extension (e.g. png)
 
 ![detection_2](/images/detection_2.png)
 
-6. System outputs the frames where Steganography has been detected
+5. System outputs the frames where Steganography has been detected
 **Note: False-positive may occur if small amount of hidden data exists within the frame**
 
 ---
