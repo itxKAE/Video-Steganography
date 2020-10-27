@@ -95,6 +95,8 @@ The program requires the following dependencies to run. In the terminal tab:
 
 ![split_frames](/images/split_frames.png)
 
+----
+
 #### Getting the Audio
 
 ![audio_menu](/images/audio_menu.png)
