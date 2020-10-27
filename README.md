@@ -11,6 +11,12 @@
     * [Installing OpenCV](#installing-opencv)
     * [Installing Moviepy](#installing-moviepy)
 * [Running Application](#running-application)
+    * [How to run the application](#how-to-run-the-application)
+    * [GUI](#gui)
+    * [Extraction and Combining](#extraction-and-combining)
+    * [Hiding and Recover data in or from wave audio file](#hiding-and-recover-data-in-or-from-wave-audio-file)
+    * [Hide or Recover Text file data in/from image file](#hide-or-recover-text-file-data-in-or-from-image-file)
+    * [Detection](#detection)
 * [Application Demo Video](#application-demo-video)
 * [Developed With](#developed-with)
 * [Project Details](#project-details)
@@ -40,11 +46,11 @@ In order to run our program, you need to install these individual required depen
      
 ## Running Application
 
-**How to run the application:**
+#### How to run the application
 
      Run the python file "RunStartHere.py"
 
-**GUI**
+#### GUI
 1. It will launch the command-line based GUI for the user to select their desired option.
 
 	![Main Gui](/images/maingui.PNG)
@@ -54,7 +60,7 @@ In order to run our program, you need to install these individual required depen
 
 	![Avi Gui](/images/avigui.PNG)
 
-**Extraction and Combining**
+#### Extraction and Combining
 
 4. Select the desired options and fill in the file paths
 
@@ -78,7 +84,7 @@ radio button with <filename>.mp4
 5th Picture
 radio button with two filenames
 
-**Hiding and Recover data in/from wave audio file**
+#### Hiding and Recover data in or from wave audio file
 
 5. Select 2 or 3 in order to hide or recover text file in a wave audio file.
 * 5.1 If the user press 2 and user desired was to hide text file in a wave audio file.
@@ -92,7 +98,7 @@ radio button with two filenames
 
 * 6.2 The output for the recover the text file in a wave audio file. Image below
 
-**Hide or Recover Text file data in/from image file.**
+#### Hide or Recover Text file data in or from image file
 
 7. Select 4 or 5 in order to hide or recover text file in to the image file.
 * 7.1 If the user choose number 4 and desired to hide text file in to the image. Image Below
@@ -101,7 +107,7 @@ radio button with two filenames
 
 * 7.3 The output for 7.1 and 7.2
 
-**Detection**
+#### Detection
 
 8. Select 6 in order to detect steganography in images done in selection 4
 * 8.1 The user selects option number 6 and choose file path / file directory for selection after hide text file or before recover the data. Images Below
