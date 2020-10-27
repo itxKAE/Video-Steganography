@@ -133,9 +133,9 @@ The program requires the following dependencies to run. In the terminal tab:
 
 **Example Purposes: filename = World Record**
 
-![combine1](/images/combine1.png)
+![combine_1](/images/combine_1.png)
 
-![combine2](/images/combine2.png)
+![combine_2](/images/combine_2.png)
 
 ---
 
