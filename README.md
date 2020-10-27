@@ -15,7 +15,7 @@
 * [Application Demo Video](#application-demo-video)
 * [Developed With](#developed-with)
 * [Project Details](#project-details)
-* [Collaborators With Contributions](#collaborators-with-contributions)
+* [Collaborators](#collaborators)
 
 ## Getting Started
 
@@ -133,17 +133,11 @@ radio button with two filenames
 * [X] **Detect Which Frames Data are Hidden**
 * [X] **Extract From Frames**
 
-## Collaborators with Contributions
+## Collaborators
 **TEAM AEGIS** 
 
 1. **Tan Kae Chuan** | [@itxKAE](https://github.com/itxKAE)
-   * Test
-   * Test
 1. **Mirza Haziq Bin Mohammed Yusoff** [@m1rzyq](https://github.com/m1rzyq) 
-   * Test
 1. **Muhammad Syaifulnizar Bin Izam** | [@syaifulnizarrr](https://github.com/syaifulnizarrr)
-   * Test
 1. **Christopher Gwee Soon Chai** | [@ManOCoolture](https://github.com/ManOCoolture)
-   * Test
 1. **Ong Xing Hao** | [@XinhaoSITICT](https://github.com/XinhaoSITICT)
-   * Test
