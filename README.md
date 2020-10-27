@@ -212,6 +212,7 @@ The program requires the following dependencies to run. In the terminal tab:
 5. Key in the file extension (e.g. png)
 6. System outputs the frames where Steganography has been detected
 **Note: False-positive may occur if small amount of hidden data exists within the frame**
+
 ![detection_1](/images/analysis.png)
 ---
 
