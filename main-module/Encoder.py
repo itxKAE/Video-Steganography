@@ -66,13 +66,11 @@ def encode(start, end, filename, frame_loc):
     with open(filename) as fileinput: # Store Data to be Encoded
         filedata = fileinput.read() 
     datapoints = math.ceil(len(filedata) / total_frame) # Data Distribution per Frame
-    counter = -1
-    for convnum in range(start, end+1):
-        # print(str(counter)  + "\n")
-        numbering = frame_loc + "\\" + str(convnum) + ".png"
-        encodetext = filedata[counter+1:(datapoints*(convnum))]
-        # print(encodetext + "\n")
-        counter += datapoints 
+    counter = start
+    for convnum in range(0, len(filedata), datapoints):
+        numbering = frame_loc + "\\" + str(counter) + ".png"
+        counter += 1
+        encodetext = filedata[convnum:convnum+datapoints] # Copy Distributed Data into Variable
         image = Image.open(numbering, 'r') # Parameter has to be r, otherwise ValueError will occur (https://pillow.readthedocs.io/en/stable/reference/Image.html)
         newimage = image.copy() # New Variable to Store Hiddend Data
         encoder(newimage, encodetext) # Steganography
@@ -85,6 +83,6 @@ print("Please Enter Start and End Frame where Data will be Hidden At")
 frame_start = int(input("Start Frame: "))
 frame_end = int(input("End Frame: "))
 frame_location = input("Frames Location: ")
-filename = input("File (inc. extension): ")
+filename = input("File to Hide (inc. extension): ")
 print("Performing Steganography...")
 encode(frame_start, frame_end, filename, frame_location)
