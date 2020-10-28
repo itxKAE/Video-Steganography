@@ -233,7 +233,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 5. System outputs the frames where Steganography has been detected
 
-**Note 1 : False-positive may occur if small amount of hidden data exists within the frame**
+**Note 1: False-positive may occur if small amount of hidden data exists within the frame**
 
 **Note 2: Despite missing some frames, the detection for image steganography are detected as accurate as possible**
 
