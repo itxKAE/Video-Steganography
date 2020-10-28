@@ -1,4 +1,3 @@
-# Contribution: Mirza
 # Credit: pavanchhatpar @ https://github.com/pavanchhatpar/wav-steg-py 
 
 import getopt, os, sys, math, struct, wave

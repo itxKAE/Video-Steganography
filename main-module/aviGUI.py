@@ -1,6 +1,3 @@
-# Contribution: Syaiful
-#Xin Hao 28 Oct 20 - Bugfix - fixed combining of frames
-
 import tkinter as tk
 import sys
 import os

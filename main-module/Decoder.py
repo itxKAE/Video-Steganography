@@ -1,7 +1,3 @@
-# Contribution: Xin Hao
-# Copied & Credit: https://www.geeksforgeeks.org/image-based-steganography-using-python/
-# Improved: Kae Chuan (Improved on Runtime to allow recovery on selected range of frames)
-
 import re
 
 from PIL import Image
@@ -39,6 +35,10 @@ print("Extracting Data...")
 decodedtextfile = open('output\decoded_frame.txt', 'a')
 decodedtextfile.write('Decoded Text:\n')
 for convnum in range(frame_start, frame_end + 1):
-    decodedtextfile.write(decode(convnum))
+    try:
+        decodedtextfile.write(decode(convnum))
+        print("Data found in Frame %d" % convnum)
+    except StopIteration:
+        print("No data found in Frame %d" % convnum)
 decodedtextfile.close()
-print("Complete!\n")
+print("\nExtraction Complete!")

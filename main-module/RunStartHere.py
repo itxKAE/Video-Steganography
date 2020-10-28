@@ -1,5 +1,3 @@
-# Contribution: Mirza
-
 import os
 
 # Checks if output Directory Exists, otherwise Create It

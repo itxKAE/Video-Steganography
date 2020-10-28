@@ -1,6 +1,4 @@
-# Contribution: Xin Hao (Edited original code Encode() to accept more than one frame)
-# Copied & Credit: https://www.geeksforgeeks.org/image-based-steganography-using-python/
-# Improved: Kae Chuan (Improved on Encode() to allow Steganography on selected range of frames)
+# Credit: https://www.geeksforgeeks.org/image-based-steganography-using-python/
 
 import math
 
@@ -63,26 +61,42 @@ def encoder(newimage, data):
 # Instead of performing Steganography on all the frames, the function will now instead perform Steganography on selected range of frames
 def encode(start, end, filename, frame_loc):
     total_frame = end - start + 1
-    with open(filename) as fileinput: # Store Data to be Encoded
-        filedata = fileinput.read() 
+    try:
+        with open(filename) as fileinput: # Store Data to be Encoded
+            filedata = fileinput.read()
+    except FileNotFoundError:
+        print("\nFile to hide not found! Exiting...")
+        quit()
     datapoints = math.ceil(len(filedata) / total_frame) # Data Distribution per Frame
     counter = start
+    print("Performing Steganography...")
     for convnum in range(0, len(filedata), datapoints):
         numbering = frame_loc + "\\" + str(counter) + ".png"
-        counter += 1
         encodetext = filedata[convnum:convnum+datapoints] # Copy Distributed Data into Variable
-        image = Image.open(numbering, 'r') # Parameter has to be r, otherwise ValueError will occur (https://pillow.readthedocs.io/en/stable/reference/Image.html)
+        try:
+            image = Image.open(numbering, 'r') # Parameter has to be r, otherwise ValueError will occur (https://pillow.readthedocs.io/en/stable/reference/Image.html)
+        except FileNotFoundError:
+            print("\n%d.png not found! Exiting..." % counter)
+            quit()
         newimage = image.copy() # New Variable to Store Hiddend Data
         encoder(newimage, encodetext) # Steganography
         new_img_name = numbering # Frame Number
         newimage.save(new_img_name, str(new_img_name.split(".")[1].upper())) # Save as New Frame
+        counter += 1
     print("Complete!\n")
 
 # Runtime
-print("Please Enter Start and End Frame where Data will be Hidden At")
-frame_start = int(input("Start Frame: "))
-frame_end = int(input("End Frame: "))
+while True:
+    try:
+        print("Please Enter Start and End Frame where Data will be Hidden At")
+        frame_start = int(input("Start Frame: "))
+        frame_end = int(input("End Frame: "))
+        if frame_start < frame_end:
+            break
+        else:
+            print("\nStarting Frame must be larger than ending Frame! Please try again...")
+    except ValueError:
+        print("\nInteger expected! Please try again...")
 frame_location = input("Frames Location: ")
 filename = input("File to Hide (inc. extension): ")
-print("Performing Steganography...")
 encode(frame_start, frame_end, filename, frame_location)

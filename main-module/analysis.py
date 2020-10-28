@@ -1,6 +1,4 @@
-# Contribution: Kae Chuan
-
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import numpy
 
 from PIL import Image
@@ -35,24 +33,9 @@ def analyse(file):
 		lsb_g_avg.append(numpy.mean(lsb_g[i:i + block_size]))
 		lsb_b_avg.append(numpy.mean(lsb_b[i:i + block_size]))
 
-	# <<<<< To be used for documentation >>>>>
-	# numBlocks = len(lsb_r_avg)
-	# blocks = [i for i in range(0, numBlocks)]
-	# plt.axis([0, len(lsb_r_avg), 0, 1]) # Graph Creation
-	# plt.ylabel("Average LSB Per Block")
-	# plt.xlabel("Block Number")
-	# plt.plot(blocks, lsb_r_avg, "ro") # Plot Values for Red
-	# plt.plot(blocks, lsb_g_avg, "go") # Plot Values for Green
-	# plt.plot(blocks, lsb_b_avg, "bo") # Plot Values for Blue
-	# plt.show()
-
 	global detection
-	for i in range(0, 10): # To Check If LSB Steganography Exists (Will be further explained in documentation on why 0.5 was selected)
-		if lsb_r_avg[i] == 0.5:
-			detection = 1
-		if lsb_g_avg[i] == 0.5:
-			detection = 1
-		if lsb_b_avg[i] == 0.5:
+	for i in range(1, 2): # To Check If LSB Steganography Exists
+		if lsb_b_avg[i] >= 0.50 and lsb_b_avg[i] < 0.52: # Range of 0.5 to 0.52 choosen due to the results obtained from the test cases that shows increased accuracy // Blue Channel showed consistency in the test cases, hence it was choosen
 			detection = 1
 
 	if detection == 1: # Output
@@ -60,17 +43,32 @@ def analyse(file):
 	else:
 		print(">> No Steganography Detected!\n")
 
+	# <<<<< For Testing/Documentation >>>>>
+	#numBlocks = len(lsb_r_avg)
+	#blocks = [i for i in range(0, numBlocks)]
+	#plt.axis([0, len(lsb_r_avg), 0, 1]) # Graph Creation
+	#plt.ylabel("Average LSB Per Block")
+	#plt.xlabel("Block Number")
+	#plt.plot(blocks, lsb_r_avg, "ro") # Plot Values for Red
+	#plt.plot(blocks, lsb_g_avg, "go") # Plot Values for Green
+	#plt.plot(blocks, lsb_b_avg, "bo") # Plot Values for Blue
+	#plt.show()
+
 # Multi-Frame Iterations Function
 def iterations(num_frames, file_type, file_location):
 	global steg_frames, detection	
 	current = 0 # Initial Frame
 	while current != num_frames:
-		print("\nAnalysing Frame %d..." % current)
-		analyse(str(file_location) + "\\" + str(current) + "." + file_type)
-		if detection == 1:
-			steg_frames.append(current)
-			detection = 0
-		current += 1
+		try:
+			print("\nAnalysing Frame %d..." % current)
+			analyse(str(file_location) + "\\" + str(current) + "." + file_type)
+			if detection == 1:
+				steg_frames.append(current)
+				detection = 0
+			current += 1
+		except KeyboardInterrupt:
+			print("\nUser canceled analysis, exiting...")
+			break
 	results()
 
 # Final Output Function
@@ -81,8 +79,15 @@ def results():
 		print(">> Steganography Detected in Frame:")
 		print(">> " + str(steg_frames)[1:-1])
 
-# Runtime
+# Runtime	
 file_location = input("Directory of Frame(s): ")
-num_frames = int(input("Number of Frame(s): "))
-file_type = input("File Type: ")
-iterations(num_frames, file_type, file_location)
+while True:
+	try:
+		num_frames = int(input("Number of Frame(s): "))	
+		break
+	except ValueError:
+		print("\nInteger Expected, Please Try Again...")
+try:
+	iterations(num_frames, "png", file_location)
+except FileNotFoundError:
+    print("\nFrames not found, are you on the right folder? Are the frames in numerical order starting from 0?\n Exiting....")
