@@ -189,6 +189,8 @@ The program requires the following dependencies to run. In the terminal tab:
 
 **Note 2: If the data stored is significantly small and a wide range of frames have been selected, this may lead to random data to be retrieved during recovery process**
 
+**Note 3: Hiding a data over frames that has hidden data previously, may results in corruption of data **
+
 4. Key in the path to the frames folder (e.g. C://path/output/filename_frames)
 5. Key in the path to the text file to hide (e.g. C://path/filename.txt)
 6. System informs that the data has been hidden
@@ -231,7 +233,9 @@ The program requires the following dependencies to run. In the terminal tab:
 
 5. System outputs the frames where Steganography has been detected
 
-**Note: False-positive may occur if small amount of hidden data exists within the frame**
+**Note 1 : False-positive may occur if small amount of hidden data exists within the frame**
+
+**Note 2: Despite missing some frames, the detection for image steganography are detected as accurate as possible**
 
 ---
 
