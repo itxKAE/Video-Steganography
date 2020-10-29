@@ -34,7 +34,7 @@ def analyse(file):
 		lsb_b_avg.append(numpy.mean(lsb_b[i:i + block_size]))
 
 	global detection
-	for i in range(1, 2): # To Check If LSB Steganography Exists
+	for i in range(0, 3): # To Check If LSB Steganography Exists
 		if lsb_b_avg[i] >= 0.50 and lsb_b_avg[i] < 0.52: # Range of 0.5 to 0.52 choosen due to the results obtained from the test cases that shows increased accuracy // Blue Channel showed consistency in the test cases, hence it was choosen
 			detection = 1
 
@@ -80,14 +80,23 @@ def results():
 		print(">> " + str(steg_frames)[1:-1])
 
 # Runtime	
-file_location = input("Directory of Frame(s): ")
+try:
+	file_location = input("Directory of Frame(s): ")
+except KeyboardInterrupt:
+		print("\nUser canceled analysis, exiting...")
+		quit()
 while True:
 	try:
 		num_frames = int(input("Number of Frame(s): "))	
 		break
 	except ValueError:
 		print("\nInteger Expected, Please Try Again...")
+	except KeyboardInterrupt:
+		print("\nUser canceled analysis, exiting...")
+		quit()
 try:
 	iterations(num_frames, "png", file_location)
 except FileNotFoundError:
     print("\nFrames not found, are you on the right folder? Are the frames in numerical order starting from 0?\n Exiting....")
+except KeyboardInterrupt:
+	quit()

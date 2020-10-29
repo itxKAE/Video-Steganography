@@ -59,5 +59,8 @@ try:
 
 except ValueError:
     print("Non-Integer Input Entered. Exiting...\n")
+except KeyboardInterrupt:
+	print("\nUser canceled, exiting...")
+	quit()
 
 
