@@ -1,3 +1,4 @@
+# Credit: https://www.geeksforgeeks.org/image-based-steganography-using-python/
 import re
 
 from PIL import Image
