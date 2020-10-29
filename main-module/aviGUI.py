@@ -50,8 +50,8 @@ def combine_audio_video(video_path, audio_path, og_path):
 
     video_path_real = video_path + "\\%d.png" # To Get All Frames in Folder
 
-    os.system("ffmpeg-4.3.1-2020-10-01-full_build\\bin\\ffmpeg -framerate %s -i \"%s\" -codec copy output\\combined_video_only.mp4" % (str(int(fps)), video_path_real)) # Combining the Frames into a Video
-    os.system("ffmpeg-4.3.1-2020-10-01-full_build\\bin\\ffmpeg -i output\\combined_video_only.mp4 -i \"%s\" -codec copy output\\combined_video_audio.mp4" % audio_path) # Combining the Frames and Audio into a Video
+    os.system("ffmpeg-4.3.1-2020-10-01-full_build\\bin\\ffmpeg -framerate %s -i \"%s\" -codec copy output\\combined_video_only.mkv" % (str(int(fps)), video_path_real)) # Combining the Frames into a Video
+    os.system("ffmpeg-4.3.1-2020-10-01-full_build\\bin\\ffmpeg -i output\\combined_video_only.mkv -i \"%s\" -codec copy output\\combined_video_audio.mkv" % audio_path) # Combining the Frames and Audio into a Video
 
     print("Combining Complete!")
 
