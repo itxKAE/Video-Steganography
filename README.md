@@ -13,6 +13,7 @@ This python script allows user to hide secret text file on media files such as i
 ---
 
 **Note 1: Some errors might not be caught by the system**
+
 **Note 2: If you wish to view the changes in LSB Bits for Frames Steganography, uncomment line 1 and line 47 to 55 of analysis.py. Do remember to install matplotlib for the code to work**
 
 ---
