@@ -37,7 +37,6 @@ This python script allows user to hide secret text file on media files such as i
     * [Recovering Data within Frames](#recovering-data-within-frames)
     * [Detection of Frames with Hidden Data](#detection-of-frames-with-hidden-data)
     * [Output Folder](#output-folder)
-* [Application Demo](#application-demo)
 * [Softwares Used](#softwares-used)
 * [Collaborators](#collaborators)
 
@@ -191,7 +190,7 @@ The program requires the following dependencies to run. In the terminal tab:
 
 **Note 2: If the data stored is significantly small and a wide range of frames have been selected, this may lead to random data to be retrieved during recovery process**
 
-**Note 3: Hiding a data over frames that has hidden data previously, may results in corruption of data **
+**Note 3: Hiding a data over frames that has hidden data previously, may results in corruption of data**
 
 4. Key in the path to the frames folder (e.g. C://path/output/filename_frames)
 5. Key in the path to the text file to hide (e.g. C://path/filename.txt)
@@ -250,12 +249,6 @@ This folder will be created upon launching the tool. The image above shows where
 ![output_folder](/images/output_folder.png)
 
 Within the folder, these are all the files that have been created using this tool. The filename used for this example is 'test'.
-
----
-
-## Application Demo
-
-[![Watch the video](/images/video_thumbnail.png "Click here to watch the video")](https://www.youtube.com/watch?v=pIkr9EqpNRc)
 
 ---
 
