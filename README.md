@@ -255,7 +255,7 @@ Within the folder, these are all the files that have been created using this too
 
 ## Application Demo
 
-[![Watch the video](screenshot)](link)
+[![Watch the video](screenshot)](https://www.youtube.com/watch?v=pIkr9EqpNRc)
 
 ---
 
