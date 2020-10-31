@@ -255,7 +255,7 @@ Within the folder, these are all the files that have been created using this too
 
 ## Application Demo
 
-[![Watch the video](/images/video_thumbnail.png)](https://www.youtube.com/watch?v=pIkr9EqpNRc)
+[![Watch the video](/images/video_thumbnail.png "Click here to watch the video")](https://www.youtube.com/watch?v=pIkr9EqpNRc)
 
 ---
 
